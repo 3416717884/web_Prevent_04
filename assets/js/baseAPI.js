@@ -14,7 +14,6 @@ $(function () {
 
         // 拦截所有响应 判断身份
         params.complete = function (res) {
-            console.log(res);
             var obj = res.responseJSON
             if (obj.status !== 0 && obj.message == '身份认证失败！') {
                 // 清空本地
